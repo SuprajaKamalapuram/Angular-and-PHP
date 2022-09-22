@@ -1,0 +1,58 @@
+Run in postman
+
+// show to speed
+Url : http://localhost/speed_test_pro/speed.php
+Method: GET
+
+Result :
+{
+    "status": 1,
+    "data": "19198.302 Kbs"
+}
+
+// Add Speed
+Url : http://localhost/speed_test_pro/addspeed.php
+Method: POST
+param:
+key : speed
+value :'19198.302 Kbs'
+
+Result :
+{"status":1,"data":"Successfully inserted 19198.302 Kbs "}
+
+//Show All record
+
+Url : http://localhost/speed_test_pro/show.php
+Method: GET
+
+Result :
+{
+    "status": 1,
+    "data": [
+        {
+            "id": "1",
+            "speed": "19198.302 Kbs",
+            "date_time": "2022-09-07 23:40:09"
+        },
+        {
+            "id": "3",
+            "speed": "19198.302 Kbs",
+            "date_time": "2022-09-07 23:50:15"
+        },
+        {
+            "id": "4",
+            "speed": "19198.302 Kbs",
+            "date_time": "2022-09-07 23:50:16"
+        }
+    ]
+}
+
+// Delete The record
+pass the id in url
+Url : http://localhost/speed_test_pro/speeddel.php?id=3
+Method: GET
+
+Result :
+{"status":1,"data":"succesfully Deleted"}
+
+
